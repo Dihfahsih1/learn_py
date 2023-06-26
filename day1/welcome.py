@@ -1,6 +1,8 @@
-import date_func
+from date_func import date 
 def welcome():
-    format_time, format_date, weekday = date_func.date()
+    format_date=date.format_date
+    format_time=date.format_time
+    weekday=date.weekday
     name = input("What is your name?")
     #validating the user input
     while not name.isalpha():

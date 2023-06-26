@@ -1,8 +1,8 @@
 def date():
     import datetime
-    today =datetime.datetime.today().date() 
-    format_date = today.strftime("%d %B, %Y")
-    format_time = today.strftime("%I:%M %p")
-    weekday = today.strftime("%a")
+    to =datetime.datetime.today().date() 
+    format_date = to.strftime("%d %B, %Y")
+    format_time = to.strftime("%I:%M %p")
+    weekday = to.strftime("%a")
 
-    return today, format_time, format_date, weekday
+    return format_date,format_time, weekday
