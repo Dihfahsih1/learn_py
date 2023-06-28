@@ -1,6 +1,6 @@
-# Simple Function - Test Cases
+# Date Function - Test Cases
 
-The `simple()` function is designed to display the current date, time, and weekday in a specific format. The following test cases are created to verify the correctness of the function:
+The `date()` function is designed to display the current date, time, and weekday in a specific format. The following test cases are created to verify the correctness of the function:
 
 ## Test Case 1: Verify date format
 **Input:** No specific input required.
@@ -16,11 +16,11 @@ The `simple()` function is designed to display the current date, time, and weekd
 
 ## Test Case 4: Verify output consistency
 **Input:** No specific input required.
-**Expected Output:** The output of the `simple()` function should consistently produce the same results when called multiple times within a short time span.
+**Expected Output:** The output of the `date()` function should consistently produce the same results when called multiple times within a short time span.
 
 ## Test Case 5: Verify against a specific date
 **Input:** Set the system clock to a specific date (e.g., June 1, 2023).
 **Expected Output:** The output should match the expected date, time, and weekday for the specified date.
 
-These test cases cover various aspects of the `simple()` function, including date format, time format, weekday format, consistency, and specific date verification. By executing these test cases, you can ensure the correctness and reliability of the function.
+These test cases cover various aspects of the `date()` function, including date format, time format, weekday format, consistency, and specific date verification. By executing these test cases, you can ensure the correctness and reliability of the function.
 
