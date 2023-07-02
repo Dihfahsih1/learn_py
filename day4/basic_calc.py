@@ -19,6 +19,7 @@ def div(a, b):
 
     print(str(a) + " / " + str(b) + " = " + str(answer))
 
+#repeat the actions
 while True:
         
     print("A, Addition")
