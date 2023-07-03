@@ -1,5 +1,16 @@
 def binary_search(lst, element):
-    middle = 0
+    if not isinstance(lst, list):
+        print("Invalid input: the list must be provided.")
+        return -1
+
+    if not lst:
+        print("Empty list. Nothing to search.")
+        return -1
+    
+    if not isinstance(element, int):
+        print("Invalid input: the target must be an integer.")
+        return -1
+    
     start = 0
     end = len(lst) - 1
     steps = 0
@@ -17,25 +28,15 @@ def binary_search(lst, element):
         else:
             start = middle + 1
     
+    print("Target not found in the list.")
     return -1
 
 elements = input("Enter list of numbers to be searched, separated by a comma: ")
+my_list = [int(num) for num in elements.split(',')]
 
-# Validate the input list
-try:
-    my_list = [int(num) for num in elements.split(',')]
-except ValueError:
-    print("Invalid input format. Please provide a comma-separated list of integers.")
-    exit()
+target = int(input("Enter the target number from the list: "))
 
-target_input = input("Enter the target number from the list: ")
-
-# Validate the target number
-try:
-    target = int(target_input)
-except ValueError:
-    print("Invalid target number. Please enter an integer.")
-    exit()
-my_list.sort()
 result = binary_search(my_list, target)
-print("Target found at index:", result)
+
+if result != -1:
+    print("Target found at index:", result)
