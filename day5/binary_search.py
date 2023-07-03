@@ -1,7 +1,7 @@
 def binary_search(lst, element):
     middle = 0
     start = 0
-    end = len(lst)
+    end = len(lst) - 1
     steps = 0
 
     while start <= end:
@@ -36,6 +36,6 @@ try:
 except ValueError:
     print("Invalid target number. Please enter an integer.")
     exit()
-
+my_list.sort()
 result = binary_search(my_list, target)
 print("Target found at index:", result)
