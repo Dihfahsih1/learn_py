@@ -34,9 +34,12 @@ def binary_search(lst, element):
 elements = input("Enter list of numbers to be searched, separated by a comma: ")
 my_list = [int(num) for num in elements.split(',')]
 
-target = int(input("Enter the target number from the list: "))
+if not my_list:
+    print("Empty list. Nothing to search.")
+else:
+    target = int(input("Enter the target number from the list: "))
 
-result = binary_search(my_list, target)
+    result = binary_search(my_list, target)
 
-if result != -1:
-    print("Target found at index:", result)
+    if result != -1:
+        print("Target found at index:", result)
