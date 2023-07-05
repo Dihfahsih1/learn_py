@@ -9,6 +9,9 @@ def main():
     monthly_interest_rate = apr/1200
     number_or_months = years * 12
     monthly_payment = principal * monthly_interest_rate / (1 - (1 + monthly_interest_rate) ** (-number_or_months))
-    print("The monthly amount for this loan is %.2f : " % monthly_payment)
+    total_payment = monthly_payment * number_or_months
+    print("***************************************************")
+    print("The monthly payment for this loan : shs. %.2f  " % monthly_payment)
+    print("The total amount that will be paid : shs. %.2f  " % total_payment)
 
 main()
