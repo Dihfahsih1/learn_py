@@ -15,3 +15,6 @@ def main():
     print("The total amount that will be paid : shs. %.2f  " % total_payment)
 
 main()
+
+print([e for e in range(100) if e%2==0
+    ])
