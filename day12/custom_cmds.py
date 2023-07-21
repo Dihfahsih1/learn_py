@@ -23,3 +23,6 @@ while True:
     quit - to  quit """)
     elif command =="quit":
         break
+
+    else:
+        print("the command you typed is invalid")
