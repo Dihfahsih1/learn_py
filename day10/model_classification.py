@@ -4,8 +4,8 @@ from sklearn.linear_model import LogisticRegression
 classifier = LogisticRegression()
 
 # Training data
-X_train = [[2, 4], [1, 3], [4, 6], [5, 2]]
-y_train = [0, 0, 1, 1]
+X_train = [[2, 4], [1, 2], [4, 6], [5, 2]]
+y_train = [0, 1, 1, 1]
 
 # Train the classifier
 classifier.fit(X_train, y_train)

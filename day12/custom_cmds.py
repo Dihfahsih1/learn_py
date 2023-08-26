@@ -7,20 +7,20 @@ while True:
             print("Car already started")
         else:
             started =True
-            print("Car started...")
+            print("Car started ...")
 
     elif command =="stop":
         if not started:
             print("car already stopped")
         else:
             started =False
-            print("Car stopped....")
+            print("Car stopped ....")
 
     elif command =="help":
-        print("""
-    start - to start car
-    stop - to stop car
-    quit - to  quit """)
+        print("=====================")
+        print("""\n start - to start car \n stop - to stop car \n quit - to quit \n""")
+        print("=====================")
+        
     elif command =="quit":
         break
 
