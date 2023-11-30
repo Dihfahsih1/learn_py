@@ -18,3 +18,9 @@ print(f"\n {'*' *20} Odd and Even Numbers {'*' *20}")
 number_category={num: ('even' if num % 2==0 else 'odd') for num in range(2,20,1)}
 print(number_category)
 
+print(f"\n {'*' *20} Combining two lists {'*' *20}")
+listx=[1,2,3]
+listy=['a','b','c','d','e','f','g','h','i','j']
+combined_lists=[(x,y)for x in listx for y in listy]
+print(combined_lists)
+
